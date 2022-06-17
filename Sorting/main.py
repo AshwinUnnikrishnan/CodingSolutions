@@ -1,8 +1,15 @@
-from lib import QuickSort
-arr = [10,12,21, 2,4,5,6,13,11,9,100, 123,121,111,99,65]
+from lib import QuickSort, BubbleSort, InsertionSort, SelectionSort, MergeSort, HeapSort
 
-sortV = QuickSort()
+arr = [10,12,21, 2,4,5,6,13,11,9,100, 123,121,111,99,1,14]
+
+#sortV = QuickSort()
+#sortV = BubbleSort()
+
+#sortV = SelectionSort()
+#sortV = MergeSort()
+
+sortV = HeapSort()
 
 
-arr = sortV.quickSort(arr)
+arr = sortV.sort(arr)
 print(arr)
